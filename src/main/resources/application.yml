@@ -1,0 +1,21 @@
+spring:
+    application:
+        name: apricart-demo
+    banner:
+        location: banner.txt
+    datasource:
+        url: jdbc:postgresql://${PG_HOST}:${PG_PORT}/${PG_DB}
+        username: ${PG_USERNAME}
+        password: ${PG_PASSWORD}
+    jpa:
+        hibernate:
+            ddl-auto: create-drop
+        show-sql: true
+
+springdoc:
+    swagger-ui:
+        operationsSorter: alpha
+        #For sorting tags alphabetically
+        tagsSorter: alpha
+        #to remove doc expansion
+        doc-expansion: false
